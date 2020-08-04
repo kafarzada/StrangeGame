@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+#game {
+    display: flex;
+    flex-wrap: wrap;
+    width: 650px;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.card {
+    width: 200px;
+    height: 200px;
+    box-shadow: 0px 10px 30px rgb(82, 82, 82);
+    border-radius: 30px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+}
+
+.card.danger {
+    color: red;
+}
+
+.card.gameOver {
+    background-color: rgb(255, 81, 81);
+    color: black;
+}
